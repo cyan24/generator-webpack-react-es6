@@ -1,0 +1,57 @@
+body{
+  background:url(../images/bc.jpg) center center no-repeat;
+  background-size: auto;
+  overflow: hidden;
+}
+.form{
+  position: relative;
+  width:260px;
+  padding: 10px;
+  height:300px;
+  margin: 180px auto 0 auto;
+  background: rgba(255, 255, 255, 0.5);;
+}
+.ipt{
+  background-color: #fff;
+  width:228px;
+  height: 38px;
+  margin-top: 20px;
+  margin-left: 15px;
+  float: left;
+}
+.ipt input{
+  width:215px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 36px;
+  line-height: 36px;
+}
+.btn{
+  float: left;
+
+  line-height: 36px;
+  margin-left: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #00a3d2;
+  margin-top: 20px;
+}
+.bt{
+  height: 36px;
+  width: 228px;
+  border:none;
+  color: inherit;
+  background-color: inherit;
+  font-size: 16px;
+}
+.bt:hover{
+  cursor: pointer;
+  background-color: #47b0ce;
+}
+.tips{
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  font-size: 8px;
+}
