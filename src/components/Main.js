@@ -2,7 +2,6 @@ require('normalize.css/normalize.css');
 require('styles/Login.css');
 
 import React from 'react';
-
 class AppComponent extends React.Component {
 	constructor(props) {
     super(props);
@@ -39,7 +38,13 @@ class AppComponent extends React.Component {
 }
 
 
-AppComponent.defaultProps = {
-};
+// AppComponent.defaultProps = {
+// };
 
-export default AppComponent;
+// ReactDOM.render(<ListWB data={dataList}/>,
+//   document.getElementById('app')
+// );
+// React.render(<AppComponent/>, document.getElementById('app')); // jshint ignore:line
+
+module.exports = AppComponent;
+// export default AppComponent;
