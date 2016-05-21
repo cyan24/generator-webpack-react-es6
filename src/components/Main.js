@@ -12,18 +12,18 @@ class AppComponent extends React.Component {
   }
   render() {
     return (
-     <form className='form' onSubmit={this.submitHandler.bind(this)}>
-		<div className='ipt'>
-			<input  name='username' type='text' placeholder='用户名' onChange={this.handleChange.bind(this, 'username')} />
-		</div>
-		<div className='ipt' >
-			<input name='pwd' type='password'  placeholder='密码' onChange={this.handleChange.bind(this, 'pwd')} />
-		</div>
-		<div className='btn'>
-			<input className='bt' value="login" type="submit"/>
-		</div>
-		<div className='tips'>这是一个recat登录demo</div>
-	</form>
+    <form className='form' onSubmit={this.submitHandler.bind(this)}>
+  		<div className='ipt'>
+  			<input  name='username' type='text' placeholder='用户名' onChange={this.handleChange.bind(this, 'username')} />
+  		</div>
+  		<div className='ipt' >
+  			<input name='pwd' type='password'  placeholder='密码' onChange={this.handleChange.bind(this, 'pwd')} />
+  		</div>
+  		<div className='btn'>
+  			<input className='bt' value="login" type="submit"/>
+  		</div>
+  		<div className='tips'>这是一个recat登录demo</div>
+	 </form>
     );
   }
 	submitHandler(event) {
@@ -31,7 +31,7 @@ class AppComponent extends React.Component {
 		console.log(this.state);
 	}
 	handleChange (name,event) {
-		var newState = {};
+		let newState = {};
 		newState[name] = event.target.value;
 		this.setState(newState);
 	}
@@ -40,11 +40,4 @@ class AppComponent extends React.Component {
 
 // AppComponent.defaultProps = {
 // };
-
-// ReactDOM.render(<ListWB data={dataList}/>,
-//   document.getElementById('app')
-// );
-// React.render(<AppComponent/>, document.getElementById('app')); // jshint ignore:line
-
-module.exports = AppComponent;
-// export default AppComponent;
+export default AppComponent;
